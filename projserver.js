@@ -16,8 +16,6 @@ const cors = require('cors');    // cross over resource sharing
 // import express-form data
 const expressFormData = require('express-form-data');
 
-
-
 // import cloudinary for images
 const cloudinary = require('cloudinary').v2;
 
@@ -185,7 +183,7 @@ projserver.use (
 projserver.listen(
     process.env.PORT,
     function() {
-        console.log(`server is running on http://localhost:${process.env.PORTi}`)
+        console.log(`server is running on http://localhost:${process.env.PORT}`)
     }
 );
 
