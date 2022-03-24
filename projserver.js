@@ -39,16 +39,6 @@ const userRoutes = require('./routes/user-route.js')
 const productRoutes = require('./routes/product-routes.js')
 
 
-
-
-
-
-
-
-
-
-
-
 // ------------ ---------------------------------- ------------
 // ------------ start of passportjs  configuration ------------
 // ------------ ---------------------------------- ------------
@@ -99,24 +89,6 @@ const passportJwt = (passport) => {
     )
 };
 passportJwt(passport)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 const { options } = require('nodemon/lib/config');
@@ -181,7 +153,7 @@ projserver.use (
 )
 
 projserver.listen(
-    process.env.PORT,
+    process.env.PORT || 3001 ,
     function() {
         console.log(`server is running on http://localhost:${process.env.PORT}`)
     }
