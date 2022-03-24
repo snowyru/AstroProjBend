@@ -134,7 +134,7 @@ const projserver = express();
 
 
 // creating get route
-projserver.get("/",
+projserver.get('/',
     //'/home',                    //  http://localhost:3001/home this is the document of the server
                         
     function(req,res) {
