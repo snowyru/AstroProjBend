@@ -138,7 +138,7 @@ projserver.get('/',
     //'/home',                    //  http://localhost:3001/home this is the document of the server
                         
     function(req,res) {
-        res.send("Finally thank god");
+        res.send("Backend-Bend-up&running");
     }
 );
 
@@ -154,7 +154,7 @@ projserver.use (
 
 projserver.listen(process.env.PORT || 3001,
     function() {
-        console.log(`server is running on http://localhost:${process.env.PORT}`)
+        console.log(`server is running on PORT number:${process.env.PORT}`)
     }
 );
 
